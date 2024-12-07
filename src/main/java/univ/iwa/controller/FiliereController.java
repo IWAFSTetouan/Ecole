@@ -71,7 +71,7 @@ public Etudiant addEtudiantToFiliere(
 	}
 	
 	@GetMapping("/filieres/{id}/etudiants")
-public List<Etudiant> getEtudiantsByFiliere(@PathVariable Long id){
+	public List<Etudiant> getEtudiantsByFiliere(@PathVariable Long id){
 		return etudiantService.getEtudiantsByFiliereId(id);
 	}
 	@GetMapping("/photos/{id}")
